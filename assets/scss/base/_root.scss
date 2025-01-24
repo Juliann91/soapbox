@@ -1,0 +1,155 @@
+// Root
+:root {
+  --lightmode: $lightmode;
+  --darkmode: $darkmode;
+  --black: $black;
+  --gray: $gray;
+  --lightgray: $lightgray;
+  --primary: $primary;
+  --secondary: $secondary;
+  --tertiary: $tertiary;
+  --placeholder: $placeholder;
+  --muted: $muted;
+  --selected: $black;
+}
+
+::selection {
+  background: $primary;
+  color: $white;
+}
+
+html {
+  font-size: $root-em;
+  font-family: $font-family, sans-serif;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  position: relative;
+  color: $text;
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-overflow-scrolling: touch;
+  font-weight: $regular;
+  -webkit-font-smoothing: antialiased;
+  font-size: $font-size-p;
+  font-family: $font-body;
+  line-height: $line-height-lg;
+
+  // Sticky footer
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  &.on-scroll {
+    header {
+      backdrop-filter: blur(5px);
+      -webkit-box-shadow: $box-shadow-sm;
+      -moz-box-shadow: $box-shadow-sm;
+      box-shadow: $box-shadow-sm;
+    }
+  }
+  
+  &.no-scroll,
+  &.hamburger-open {
+	overflow: hidden;
+  }
+}
+
+[id] {
+  scroll-margin-top: 134px; /* Adjust this value to match the height of your fixed header */
+}
+
+main {
+  position: relative;
+  overflow-x: hidden;
+}
+
+// .overlay {
+//   width: 100vw;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   pointer-events: none;
+//   background: $backdrop-xl;
+//   opacity: 0;
+//   transition: $transition-md;
+//   z-index: 999;
+//   cursor: pointer;
+// 
+//   &.visible {
+// 	opacity: 1;
+// 	pointer-events: all;
+// 	transition: $transition-md;
+//   }
+// }
+
+section {
+  position: relative;
+  padding: $p-lg 0;
+
+  .btn:not(:last-of-type) {
+	margin-right: 0.5rem;
+  }
+
+  &.colverticalalign {
+	> .container {
+	  > .row {
+		> div {
+		  display: flex;
+		  flex-direction: column;
+		  align-self: center;
+		}
+	  }
+	}
+  }
+}
+
+
+
+p {
+  font-size: $font-size-p;
+  margin-bottom: $m-sm;
+  font-weight: $regular;
+  font-family: $font-body;
+
+  &:last-child {
+	margin-bottom: 0;
+  }
+}
+
+span,
+bdi {
+  font-family: $font-family;
+}
+
+small,
+strong {
+  font-family: $font-body;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: $font-body;
+  transition: $transition-md;
+
+  &:hover,
+  &:focus {
+	color: $secondary;
+  }
+}
+
+i {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+picture img {
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+ #navbarNav {
+  .navbar-nav {
+    margin-right: -$p-sm;
+      a {
+        padding: $p-sm $p-md;
+        color:$white;
+        transition: $transition-md;
+        
+        &:hover {
+          opacity: 0.7;  
+        }
+        
+       
+      }
+
+    
+    @media (max-width: 991px) {
+      margin-right: 0;
+      border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+       li {
+         a {
+           padding: $p-sm 0;
+         }
+       }
+    }
+  }
+}

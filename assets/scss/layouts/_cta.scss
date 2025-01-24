@@ -1,0 +1,14 @@
+section {
+  &.cta {
+    .container {
+      .row {
+        >div {
+          h2 {
+            font-size: 4rem;
+            text-shadow: $text-shadow;
+          }
+        }
+      }
+    }
+  }
+}

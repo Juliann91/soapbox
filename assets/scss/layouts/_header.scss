@@ -1,0 +1,38 @@
+@import '_sub-header.scss';
+
+header {
+  background-color: $primary-color;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: $transition-md;
+  @media only screen and (max-width: $lg){
+    -webkit-box-shadow: $box-shadow-sm;
+    -moz-box-shadow: $box-shadow-sm;
+    box-shadow: $box-shadow-sm;
+  }
+  
+  nav {
+    .logo img{
+      height: 40px;
+    }
+    
+  }
+
+  .logo {
+	font-family: $font-primary;
+	font-size: $font-size-base * 1.5;
+  }
+  
+  
+ .navbar-toggler {
+   border: solid 1px $white;
+   
+   .navbar-toggler-icon {
+     filter: brightness(0) invert(1);
+   }
+  }
+}

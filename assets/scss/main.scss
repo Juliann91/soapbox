@@ -1,0 +1,30 @@
+// main.scss
+
+
+// Abstracts
+@import 'abstracts/variables'; // Import with the alias "var"
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/icons';
+
+// Vendors
+@import 'vendors/bootstrap'; // local Bootstrap css intergratie 
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/root';
+@import 'base/utilities';
+
+// Layouts
+@import 'layouts/header';
+@import 'layouts/hero';
+@import 'layouts/footer';
+@import 'layouts/cta';
+
+// Components
+@import 'components/swiper';
+@import 'components/navbar';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/partners';

@@ -1,0 +1,123 @@
+
+@font-face {
+  font-family: 'icons';
+  src: url('../../assets/icons/icons.eot?9967650');
+  src: url('../../assets/icons/icons.eot?9967650#iefix') format('embedded-opentype'),
+        url('../../assets/icons/icons.woff2?9967650') format('woff2'),
+        url('../../assets/icons/icons.woff?9967650') format('woff'),
+        url('../../assets/icons/icons.ttf?9967650') format('truetype'),
+        url('../../assets/icons/icons.svg?9967650#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+	font-family: 'icons';
+	src: url('../font/icons.svg?35470958#icons') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  // margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  // margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-chev:before { content: '\e800'; } /* '' */
+.icon-graduation:before { content: '\e801'; } /* '' */
+.icon-handshake:before { content: '\e802'; } /* '' */
+.icon-heart:before { content: '\e803'; } /* '' */
+.icon-instagram:before { content: '\e804'; } /* '' */
+.icon-linkedin:before { content: '\e805'; } /* '' */
+.icon-mail:before { content: '\e806'; } /* '' */
+.icon-megaphone:before { content: '\e807'; } /* '' */
+.icon-star:before { content: '\e808'; } /* '' */
+.icon-tiktok:before { content: '\e809'; } /* '' */
+.icon-youtube:before { content: '\e80a'; } /* '' */
+.icon-phone:before { content: '\e80b'; } /* '' */
+
+
+ .soapbox-icon {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+ 
+  display: flex;
+  justify-content: center;
+  text-decoration: inherit;
+  width: 2em;
+  // margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  padding: 0;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  // margin-left: .2em;
+ 
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+ transition: $transition-md;
+ 
+ &:before {
+   width: auto;
+ }
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  
+    &.smaller {
+      font-size: 1.7rem;
+      
+      &:before {
+        width: 100%;
+      }
+  }
+}

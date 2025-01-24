@@ -1,0 +1,151 @@
+// Color palette
+$primary-color: #FC6E3E;
+$secondary-color: #FFDA00;
+$black: #111;
+$blue: #001427;
+$white: #fff;
+
+// Spacing
+$spacing-unit: 1rem;
+
+// Root
+$path: "/assets/";
+
+// Adjusting the root-em will adjust the rem size of the document
+$root-em: 16px;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+$primary: $primary-color;
+$primary-light: lighten($primary, 10%);
+$primary-dark: darken($primary, 10%);
+
+$lightmode: $primary;
+
+$secondary: $secondary-color;
+$secondary-light: lighten($secondary, 10%);
+$secondary-dark: darken($secondary, 10%);
+
+$darkmode: $secondary;
+
+$tertiary: $blue;
+$tertiary-light: lighten($tertiary, 10%);
+$tertiary-dark: darken($tertiary, 10%);
+
+$gray: #777777;
+$lightgray: #F6F6F6;
+$colored-gray: #FAFAFA;
+
+$text: $black;
+$placeholder: #A3A3A3;
+
+$error: #BD0939;
+
+// Background colors
+.primary {
+	color: $white;
+	background-color: $primary;
+	
+	@for $i from 1 through 6 {
+	  h#{$i} {
+		color: $white;
+	  }
+	}
+}
+
+.secondary {
+	color: $white;
+	background-color: $secondary;
+	
+	@for $i from 1 through 6 {
+	  h#{$i} {
+		color: $white;
+	  }
+	}
+}
+
+// Opacity
+$placeholder-opacity: 0.8;
+$opacity-sm: .04;
+$opacity-md: .08;
+$opacity-lg: .16;
+$opacity-xl: 0.32;
+$opacity-xxl: 0.64;
+
+$box-shadow-color-sm: rgba(0, 0, 0, $opacity-sm);
+$box-shadow-color-md: rgba(0, 0, 0, $opacity-md);
+$box-shadow-color-lg: rgba(0, 0, 0, $opacity-lg);
+
+// Shadows
+$box-shadow-sm: 0px 3px 3px 0px $box-shadow-color-sm;
+$box-shadow-md: 0px 3px 3px 0px $box-shadow-color-md;
+$box-shadow-lg: 0px 3px 3px 0px $box-shadow-color-lg;
+
+$backdrop-sm: rgba(0, 0, 0, $opacity-sm);
+$backdrop-md: rgba(0, 0, 0, $opacity-md);
+$backdrop-lg: rgba(0, 0, 0, $opacity-lg);
+$backdrop-xl: rgba(0, 0, 0, $opacity-xl);
+$backdrop-xxl: rgba(0, 0, 0, $opacity-xxl);
+
+$text-shadow: 0px 0px 6px rgba(0,0,0,0.35);
+
+// Spacing
+// Padding
+$p-xs: 0.6rem;
+$p-sm: 1rem;
+$p-md: 2rem;
+$p-lg: 4rem;
+$p-xl: 6rem;
+$p-xxl: 8rem;
+$p-xxxl: 12rem;
+$p-xxxxl: 16rem;
+
+// Margin
+$m-xs: 0.6rem;
+$m-sm: 1rem;
+$m-md: 2rem;
+$m-lg: 4rem;
+$m-xl: 6rem;
+$m-xxl: 8rem;
+$m-xxxl: 12rem;
+$m-xxxxl: 16rem;
+
+// Border-radius
+$border-radius-xs: 0.25rem;
+$border-radius-sm: 0.5rem;
+$border-radius-md: 1rem;
+$border-radius-lg: 1.5rem;
+
+// Transitions
+$transition-time-sm: 0.15s;
+$transition-time-md: 0.3s;
+$transition-time-lg: 0.5s;
+$transition-time-xl: 0.75s;
+$transition-time-xxl: 1s;
+
+$transition-sm: all ease $transition-time-sm;
+$transition-md: all ease $transition-time-md;
+$transition-lg: all ease $transition-time-lg;
+$transition-xl: all ease $transition-time-xl;
+$transition-xxl: all ease $transition-time-xxl;
+
+//Gradients
+$soapboxgradient: linear-gradient(to right, #ff7700, #ffd700);
+$soapboxgradientflipped: linear-gradient(to left, #ff7700, #ffd700);
+
+.gradientbg {
+	background: $soapboxgradient;
+	
+	&.flipped {
+		background: $soapboxgradientflipped;
+	}
+}
+
+// Bootstrap breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

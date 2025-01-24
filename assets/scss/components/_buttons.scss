@@ -1,0 +1,36 @@
+
+$p-input: $p-sm $p-lg;
+
+button, .btn {
+	transition: $transition-md;
+	cursor: pointer;
+	outline: none;
+	border-radius: $border-radius-sm;
+	font-size: $font-size-btn;
+	position: relative;
+	padding: $p-input;
+	box-shadow: none;
+	border: 1px solid transparent;
+	background: transparent;
+	font-weight: $bold-black;
+	line-height: $line-height-md;
+	font-family: $font-family;
+	display: inline-flex;
+	
+	text-transform: uppercase;
+	
+	&:focus {
+		box-shadow: none !important;
+	}
+
+	&.btn-primary {
+		background: $primary;
+		color: $white;
+		border-color: $primary;
+		
+		&:hover, &:active, &:focus {
+			background: $primary-dark;
+			color: $white;
+		}
+	}
+}
