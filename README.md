@@ -4,3 +4,5 @@ Normaal gesproken zou ik dit project opzetten binnen een WordPress-omgeving, geb
 
 Voor dit project heb ik mezelf uitgedaagd om met Sass te werken, omdat het geavanceerdere functies biedt dan Less, en ik met Less in mijn eerdere werkervaring tegen verschillende uitdagingen aanliep. Het opzetten van Sass en het automatiseren van de compiler in mijn teksteditor Nova was een leerzame ervaring, vooral het opzetten van de basisstructuur en de configuratie ervan.# soapbox
 # soapbox
+# soapbox
+# soapbox
